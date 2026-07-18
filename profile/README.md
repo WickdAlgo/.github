@@ -32,7 +32,7 @@ WickdAlgo is built on abstraction through modularity.
 
 The "how" of market processing should be reusable. The "why" of a trade should belong to each strategy agent.
 
-- **Unified core:** Wickd.Core, Wickd.CLI, and future Wickd.MCP tooling handle market data ingestion, normalization, replay, and structure emission.
+- **Unified core:** Wickd.Core and Wickd.CLI handle market data ingestion, normalization, replay, and deterministic structure emission.
 - **Standardized structures:** Bots should not need to reimplement swing, order block, FVG, expansion, or liquidity detection. They consume these outputs through stable contracts.
 - **Independent decisions:** A strategy agent owns its rules for setup selection, validation, risk, order placement, lifecycle management, and failure handling.
 - **Explainable automation:** Every useful trading decision should be traceable back to the market structures, settings, and strategy rules that produced it.
@@ -45,43 +45,44 @@ This separation lets multiple bots share the same deterministic foundation while
 
 | Layer | Purpose | Status |
 |---|---|---|
-| Engine and tooling | .NET core libraries, CLI workflows, market data adapters, deterministic backtest replay, and SMC structure journaling | Current focus |
-| Web platform | Strategy playground, chart-based structure inspection, algorithm tuning, backtesting interface, and research workflows | Next platform layer |
-| Strategy agents | Independent bots that consume validated structures and manage strategy-specific execution decisions | Later execution layer |
-| AI research layer | LLM-assisted discovery, explanation, evaluation, and optimization over deterministic engine outputs | Future intelligence layer |
+| Deterministic Core | .NET libraries, CLI workflows, market data adapters, causal structure contracts, and reproducible SMC detection | Current correctness focus |
+| Structure research platform | Chart-based inspection, causal replay, visual validation, and detector-tuning workflows | Next product deliverable |
+| Strategy backtesting | Strategy playground, reusable simulation, outcomes, and research workflows over validated structures | After structure validation |
+| Strategy agents and AI | Independent execution agents plus assisted discovery, explanation, evaluation, and optimization | Later platform layers |
 
-The current technical foundation lives in `wickd-dotnet`: a .NET-first engine and CLI for historical data handling, deterministic replay, and structure journaling. The web platform has higher priority than fully functional live trading bots because WickdAlgo needs a strong visual research loop for tuning each structure-detection algorithm before real execution. Live execution, marketplace mechanics, and autonomous AI research are roadmap items, not current production claims.
+The current technical foundation lives in `wickd-dotnet`: a .NET-first engine and CLI for historical data handling, deterministic replay, and structure journaling. WickdAlgo is proving structure correctness before strategy backtesting, then proving strategy backtesting before generalizing the agent platform. Chart inspection has immediate priority because the structure algorithms need a fast visual research loop. Live execution, marketplace mechanics, and autonomous AI research are roadmap items, not current production claims.
 
 ---
 
 ## Roadmap
 
-### Phase I: Tooling and Engine
+### Phase I: Structure Correctness and Visual Inspection
 
-Current focus: build a robust, high-performance foundation for data handling and structure emission.
+Current focus: turn the existing data and replay foundation into a trustworthy, inspectable structure platform.
 
-- Wickd.Core for reusable trading and analysis primitives.
-- Wickd.CLI for local fetch, replay, backtest, and journal workflows.
-- Wickd.MCP direction for agent/tool integration.
-- SMC structure outputs including swings, order blocks, expansion/FVG events, and liquidity behavior.
-- Architecture that can support multiple independent strategy-agent instances.
+- Deterministic, causal Wickd.Core contracts with explicit subject and knowledge time.
+- Visually verified internal and external swings, Market Structure Breaks, liquidity, Order Blocks, and ExpansionFvg lifecycles.
+- A local chart inspector for causal replay, entity lifecycles, and algorithm tuning.
+- A reusable React/TypeScript chart component designed to become part of the future public web platform.
+- Regression fixtures created from visually reviewed market scenarios.
 
-### Phase II: Web Platform
+### Phase II: Strategy Backtesting Platform
 
-Next focus: make structure research, strategy prototyping, and backtesting accessible through a user-facing platform.
+Next focus: build strategies and simulation on top of structure contracts that have already been visually and deterministically validated.
 
-- Strategy playground for building and testing rules without writing backend code.
-- Chart-based inspection tools for validating swings, order blocks, FVGs, liquidity, and other SMC structures.
-- Backtesting and visualization workflows for market-structure strategies.
-- Algorithm tuning workflows before live execution is introduced.
-- Future subscription access for deployed user-owned bots once the structure engine and strategy layer are mature enough.
+- Generic backtesting and settlement infrastructure outside Wickd.Core.
+- The first independent ExpansionFvg strategy module.
+- Strategy playground and backtest visualization workflows in the public web platform.
+- Explainable outcomes linked back to exact structures, settings, and strategy rules.
+- Stable boundaries proven by real strategy use before broader agent abstractions are introduced.
 
 Marketplace, social-trading, or copy-trading mechanics may be explored later, but they are secondary to the stability of the trading core.
 
-### Phase III: AI Research Layer
+### Phase III: Strategy Agents and AI Research
 
-Future focus: use AI agents to accelerate strategy research, explanation, and evaluation.
+Future focus: generalize strategy-agent execution and use AI to accelerate research, explanation, and evaluation.
 
+- Run independent strategy agents over shared deterministic Core contracts.
 - Discover strategy ideas from market data and external signals.
 - Backtest candidate ideas against WickdAlgo's deterministic core.
 - Explain why a strategy did or did not qualify.
