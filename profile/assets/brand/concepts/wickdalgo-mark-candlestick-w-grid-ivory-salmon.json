@@ -1,0 +1,18 @@
+{
+  "name": "WickdAlgo Continuous Candlestick W - Ivory Salmon Palette",
+  "version": 1,
+  "geometrySource": "wickdalgo-mark-candlestick-w-grid.json",
+  "geometryInvariant": "OHLC values, grid coordinates, candle positions, body sizes, and wick lengths are unchanged.",
+  "palette": {
+    "chartCanvas": "#FFFEEE",
+    "upCandleBody": "#FFFFFF",
+    "downCandleBody": "#F77C80",
+    "borderAndWick": "#000000"
+  },
+  "rendering": {
+    "bodyBorderPx": 4,
+    "borderAlignment": "inset on the 4px coordinate grid",
+    "canvasTransparent": false
+  }
+}
+

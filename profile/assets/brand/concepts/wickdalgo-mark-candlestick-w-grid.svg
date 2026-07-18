@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">WickdAlgo continuous candlestick W concept</title>
+  <desc id="description">Seventeen continuous OHLC candles arranged on a fixed grid to form a natural W-shaped price path.</desc>
+  <metadata>
+    Grid and OHLC source: wickdalgo-mark-candlestick-w-grid.json
+    Price mapping: y = 820 - (price - 40) * 12
+    Continuity invariant: each candle close equals the next candle open.
+  </metadata>
+  <style>
+    .up { fill: #31805A; }
+    .down { fill: #666666; }
+  </style>
+  <g id="candles" shape-rendering="geometricPrecision">
+    <g id="candle-01" class="down" data-open="85" data-high="89" data-low="74" data-close="77">
+      <rect x="124" y="232" width="8" height="180"/>
+      <rect x="112" y="280" width="32" height="96"/>
+    </g>
+    <g id="candle-02" class="down" data-open="77" data-high="80" data-low="60" data-close="66">
+      <rect x="172" y="340" width="8" height="240"/>
+      <rect x="160" y="376" width="32" height="132"/>
+    </g>
+    <g id="candle-03" class="up" data-open="66" data-high="75" data-low="63" data-close="71">
+      <rect x="220" y="400" width="8" height="144"/>
+      <rect x="208" y="448" width="32" height="60"/>
+    </g>
+    <g id="candle-04" class="down" data-open="71" data-high="73" data-low="49" data-close="55">
+      <rect x="268" y="424" width="8" height="288"/>
+      <rect x="256" y="448" width="32" height="192"/>
+    </g>
+    <g id="candle-05" class="up" data-open="55" data-high="68" data-low="52" data-close="64">
+      <rect x="316" y="484" width="8" height="192"/>
+      <rect x="304" y="532" width="32" height="108"/>
+    </g>
+    <g id="candle-06" class="down" data-open="64" data-high="69" data-low="58" data-close="61">
+      <rect x="364" y="472" width="8" height="132"/>
+      <rect x="352" y="532" width="32" height="36"/>
+    </g>
+    <g id="candle-07" class="up" data-open="61" data-high="78" data-low="59" data-close="73">
+      <rect x="412" y="364" width="8" height="228"/>
+      <rect x="400" y="424" width="32" height="144"/>
+    </g>
+    <g id="candle-08" class="up" data-open="73" data-high="86" data-low="70" data-close="81">
+      <rect x="460" y="268" width="8" height="192"/>
+      <rect x="448" y="328" width="32" height="96"/>
+    </g>
+    <g id="candle-09" class="down" data-open="81" data-high="85" data-low="70" data-close="74">
+      <rect x="508" y="280" width="8" height="180"/>
+      <rect x="496" y="328" width="32" height="84"/>
+    </g>
+    <g id="candle-10" class="up" data-open="74" data-high="82" data-low="72" data-close="78">
+      <rect x="556" y="316" width="8" height="120"/>
+      <rect x="544" y="364" width="32" height="48"/>
+    </g>
+    <g id="candle-11" class="down" data-open="78" data-high="81" data-low="61" data-close="65">
+      <rect x="604" y="328" width="8" height="240"/>
+      <rect x="592" y="364" width="32" height="156"/>
+    </g>
+    <g id="candle-12" class="down" data-open="65" data-high="68" data-low="45" data-close="51">
+      <rect x="652" y="484" width="8" height="276"/>
+      <rect x="640" y="520" width="32" height="168"/>
+    </g>
+    <g id="candle-13" class="up" data-open="51" data-high="63" data-low="48" data-close="59">
+      <rect x="700" y="544" width="8" height="180"/>
+      <rect x="688" y="592" width="32" height="96"/>
+    </g>
+    <g id="candle-14" class="up" data-open="59" data-high="75" data-low="56" data-close="70">
+      <rect x="748" y="400" width="8" height="228"/>
+      <rect x="736" y="460" width="32" height="132"/>
+    </g>
+    <g id="candle-15" class="down" data-open="70" data-high="73" data-low="62" data-close="66">
+      <rect x="796" y="424" width="8" height="132"/>
+      <rect x="784" y="460" width="32" height="48"/>
+    </g>
+    <g id="candle-16" class="up" data-open="66" data-high="80" data-low="63" data-close="77">
+      <rect x="844" y="340" width="8" height="204"/>
+      <rect x="832" y="376" width="32" height="132"/>
+    </g>
+    <g id="candle-17" class="up" data-open="77" data-high="88" data-low="74" data-close="82">
+      <rect x="892" y="244" width="8" height="168"/>
+      <rect x="880" y="316" width="32" height="60"/>
+    </g>
+  </g>
+</svg>

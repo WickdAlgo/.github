@@ -1,0 +1,49 @@
+{
+  "name": "WickdAlgo Continuous Candlestick W",
+  "version": 1,
+  "canvas": {
+    "width": 1024,
+    "height": 1024,
+    "transparent": true
+  },
+  "grid": {
+    "coordinateUnitPx": 4,
+    "firstCandleCenterX": 128,
+    "timeStepPx": 48,
+    "priceTickPx": 12,
+    "priceOrigin": 40,
+    "priceOriginY": 820,
+    "priceToY": "y = 820 - (price - 40) * 12",
+    "bodyWidthPx": 32,
+    "wickWidthPx": 8
+  },
+  "palette": {
+    "up": "#31805A",
+    "down": "#666666"
+  },
+  "invariants": {
+    "continuous": "close[n] = open[n + 1]",
+    "high": "high >= max(open, close)",
+    "low": "low <= min(open, close)",
+    "direction": "close > open is up; close < open is down"
+  },
+  "candles": [
+    { "index": 1, "x": 128, "open": 85, "high": 89, "low": 74, "close": 77, "direction": "down", "bodyPx": { "x": 112, "y": 280, "width": 32, "height": 96 }, "wickPx": { "x": 124, "y": 232, "width": 8, "height": 180 } },
+    { "index": 2, "x": 176, "open": 77, "high": 80, "low": 60, "close": 66, "direction": "down", "bodyPx": { "x": 160, "y": 376, "width": 32, "height": 132 }, "wickPx": { "x": 172, "y": 340, "width": 8, "height": 240 } },
+    { "index": 3, "x": 224, "open": 66, "high": 75, "low": 63, "close": 71, "direction": "up", "bodyPx": { "x": 208, "y": 448, "width": 32, "height": 60 }, "wickPx": { "x": 220, "y": 400, "width": 8, "height": 144 } },
+    { "index": 4, "x": 272, "open": 71, "high": 73, "low": 49, "close": 55, "direction": "down", "bodyPx": { "x": 256, "y": 448, "width": 32, "height": 192 }, "wickPx": { "x": 268, "y": 424, "width": 8, "height": 288 } },
+    { "index": 5, "x": 320, "open": 55, "high": 68, "low": 52, "close": 64, "direction": "up", "bodyPx": { "x": 304, "y": 532, "width": 32, "height": 108 }, "wickPx": { "x": 316, "y": 484, "width": 8, "height": 192 } },
+    { "index": 6, "x": 368, "open": 64, "high": 69, "low": 58, "close": 61, "direction": "down", "bodyPx": { "x": 352, "y": 532, "width": 32, "height": 36 }, "wickPx": { "x": 364, "y": 472, "width": 8, "height": 132 } },
+    { "index": 7, "x": 416, "open": 61, "high": 78, "low": 59, "close": 73, "direction": "up", "bodyPx": { "x": 400, "y": 424, "width": 32, "height": 144 }, "wickPx": { "x": 412, "y": 364, "width": 8, "height": 228 } },
+    { "index": 8, "x": 464, "open": 73, "high": 86, "low": 70, "close": 81, "direction": "up", "bodyPx": { "x": 448, "y": 328, "width": 32, "height": 96 }, "wickPx": { "x": 460, "y": 268, "width": 8, "height": 192 } },
+    { "index": 9, "x": 512, "open": 81, "high": 85, "low": 70, "close": 74, "direction": "down", "bodyPx": { "x": 496, "y": 328, "width": 32, "height": 84 }, "wickPx": { "x": 508, "y": 280, "width": 8, "height": 180 } },
+    { "index": 10, "x": 560, "open": 74, "high": 82, "low": 72, "close": 78, "direction": "up", "bodyPx": { "x": 544, "y": 364, "width": 32, "height": 48 }, "wickPx": { "x": 556, "y": 316, "width": 8, "height": 120 } },
+    { "index": 11, "x": 608, "open": 78, "high": 81, "low": 61, "close": 65, "direction": "down", "bodyPx": { "x": 592, "y": 364, "width": 32, "height": 156 }, "wickPx": { "x": 604, "y": 328, "width": 8, "height": 240 } },
+    { "index": 12, "x": 656, "open": 65, "high": 68, "low": 45, "close": 51, "direction": "down", "bodyPx": { "x": 640, "y": 520, "width": 32, "height": 168 }, "wickPx": { "x": 652, "y": 484, "width": 8, "height": 276 } },
+    { "index": 13, "x": 704, "open": 51, "high": 63, "low": 48, "close": 59, "direction": "up", "bodyPx": { "x": 688, "y": 592, "width": 32, "height": 96 }, "wickPx": { "x": 700, "y": 544, "width": 8, "height": 180 } },
+    { "index": 14, "x": 752, "open": 59, "high": 75, "low": 56, "close": 70, "direction": "up", "bodyPx": { "x": 736, "y": 460, "width": 32, "height": 132 }, "wickPx": { "x": 748, "y": 400, "width": 8, "height": 228 } },
+    { "index": 15, "x": 800, "open": 70, "high": 73, "low": 62, "close": 66, "direction": "down", "bodyPx": { "x": 784, "y": 460, "width": 32, "height": 48 }, "wickPx": { "x": 796, "y": 424, "width": 8, "height": 132 } },
+    { "index": 16, "x": 848, "open": 66, "high": 80, "low": 63, "close": 77, "direction": "up", "bodyPx": { "x": 832, "y": 376, "width": 32, "height": 132 }, "wickPx": { "x": 844, "y": 340, "width": 8, "height": 204 } },
+    { "index": 17, "x": 896, "open": 77, "high": 88, "low": 74, "close": 82, "direction": "up", "bodyPx": { "x": 880, "y": 316, "width": 32, "height": 60 }, "wickPx": { "x": 892, "y": 244, "width": 8, "height": 168 } }
+  ]
+}
