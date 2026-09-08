@@ -8,7 +8,11 @@ analysis, chart-based inspection and strategy research.
 
 ## The project family
 
-The web experience brings research and visualization together. The public
+[Wickd Web](https://wickd.kukso.com) is the public web entry point for research
+and visualization. `wickd.kukso.com` is the pre-release domain, not a permanent
+general-availability domain or a promise that every feature is released.
+
+The public
 [Wickd CLI](https://github.com/WickdAlgo/wickd-cli) provides a terminal client for
 supported platform services. Both are part of the same WickdAlgo product family.
 
