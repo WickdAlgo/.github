@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: WickdAlgo shared work board
+    url: https://github.com/orgs/WickdAlgo/projects/1
+    about: View current priorities and work status. Quick feedback may be a title alone.

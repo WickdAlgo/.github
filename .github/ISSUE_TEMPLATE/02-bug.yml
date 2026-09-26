@@ -1,0 +1,31 @@
+name: Bug report
+description: Report behavior that appears incorrect.
+title: "[bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "A concise report is welcome. Include reproduction details if available."
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Describe the behavior you observed.
+      placeholder: Optional
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Describe the expected behavior.
+      placeholder: Optional
+    validations:
+      required: false
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction details
+      description: Steps, environment, or supporting evidence, if known.
+      placeholder: Optional
+    validations:
+      required: false

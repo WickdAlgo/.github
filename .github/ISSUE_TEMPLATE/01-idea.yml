@@ -1,0 +1,23 @@
+name: Idea or feature request
+description: Suggest a product or workflow improvement.
+title: "[idea] "
+body:
+  - type: markdown
+    attributes:
+      value: "A short description is enough to start. Add details when you have them."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to improve?
+      description: Describe the problem or opportunity and who it affects.
+      placeholder: Optional
+    validations:
+      required: false
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected outcome
+      description: What would a useful result look like?
+      placeholder: Optional
+    validations:
+      required: false
