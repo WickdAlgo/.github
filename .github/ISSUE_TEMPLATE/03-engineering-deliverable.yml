@@ -1,0 +1,28 @@
+name: Engineering deliverable
+description: Track a bounded engineering, maintenance, or documentation change.
+title: "[engineering] "
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Goal
+      description: What should change?
+      placeholder: Optional while the request is being captured
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know the work is complete, if known?
+      placeholder: Optional while the task is being shaped
+    validations:
+      required: false
+  - type: textarea
+    id: validation
+    attributes:
+      label: Verification
+      description: Checks or constraints to consider, if known.
+      placeholder: Optional
+    validations:
+      required: false
